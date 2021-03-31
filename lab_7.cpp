@@ -27,7 +27,7 @@ void setup(void){
      Serial.printf("read=== %d\n", val);                           //แสดงค่าออกมา val = 0 หรือ 1 ตามค่าที่อ่านข้อมูลเข้าพอร์ตที่input
           
         if(val==1) 
-               Serial.println("...input...");                      //การพิมพ์ข้อมูลไปยังพอร์ตและขึ้นบรรทัดใหม่
+               Serial.println("...input=1...");                      //การพิมพ์ข้อมูลไปยังพอร์ตและขึ้นบรรทัดใหม่
                Serial.begin(115200);
 
                 WiFi.softAP(ssid, password);
@@ -50,7 +50,7 @@ void setup(void){
                 Serial.println("server started");    
         
         } else {
-               Serial.println("...no input...");
+               Serial.println("...input=0...");
                Serial.begin(115200);
         
                cnt++;
