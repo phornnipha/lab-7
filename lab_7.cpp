@@ -55,12 +55,12 @@ void setup(void){
         
                cnt++;
                Serial.printf("number:%d\n",cnt);
-               if((cnt % 2 == 0) {
-                      Serial.println("==LED ON==");
-                      digitalWrite(2, HIGH);
+               if((cnt % 2 == 0) {                              // % จะเป็นการหารเอาเศษ
+                      Serial.println("==LED ON==");         
+                      digitalWrite(2, HIGH);                    //หลอดไฟ LED ติด
                } else {
                       Serial.println("==LED OFF==");
-                      digitalWrite(2, LOW);
+                      digitalWrite(2, LOW);                     //หลอดไฟ LED ดับ
                }
                int p = (cnt % 4)+1;
                int s = p * 1000;
@@ -69,7 +69,7 @@ void setup(void){
         }
 }
 
-void loop(){
+void loop(){                                                    //เรียกใช้งาน wifi ที่ set up ไว้
 	server.handleClient();
 	
 }
