@@ -42,7 +42,7 @@ void setup(void){
                         String msg = "Hello cnt: ";
                         msg += cnt;
                         server.send(200, "text/plain", msg);
-                        digitalWrite(2, HIGH);                  //เขียนข้อมูลออกพอร์ตที่output
+                        digitalWrite(2, LOW);                  //เขียนข้อมูลออกพอร์ตที่output
                         delay(1000);         
                 });
                 
