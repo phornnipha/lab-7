@@ -55,7 +55,7 @@ void setup(void){
         
                cnt++;
                Serial.printf("number:%d\n",cnt);
-               if(cnt % 2) {
+               if((cnt % 2 == 0) {
                       Serial.println("==LED ON==");
                       digitalWrite(2, HIGH);
                } else {
